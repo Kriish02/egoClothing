@@ -22,7 +22,7 @@ const RunBar = () => {
   }, []);
 
   return (
-    <div className="bg-black-600 text-white h-8 flex items-center justify-center overflow-hidden relative">
+    <div className="bg-black-600 text-white h-4 flex items-center m-1.5 justify-center overflow-hidden relative">
       <div key={index} className="absolute w-full text-center animate-scroll text-xs font-medium">
         {messages[index]}
       </div>

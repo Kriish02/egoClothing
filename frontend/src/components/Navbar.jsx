@@ -2,12 +2,15 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-    <div className="bg-white shadow-md py-4 px-6 flex items-center justify-between">
+    <div className="bg-white shadow-md py-1 px-6 flex items-center justify-between w-full">
       
-      {/* Left Section - Logo */}
+      {/* Left Section - Enlarged Logo (Keeps Navbar Height Fixed) */}
       <div className="flex items-center">
-        <img src="/logo.png" alt="EGO Clothing" className="h-10 w-auto" />  
-        {/* Replace /logo.png with your actual logo path */}
+        <img 
+          src="/ego.png" 
+          alt="EGO Clothing" 
+          className="h-16 w-auto -m-2"  // Increased size but keeps navbar height fixed
+        />
       </div>
 
       {/* Center Section - Navigation Links */}
@@ -17,7 +20,7 @@ const Navbar = () => {
         <li className="hover:text-black cursor-pointer">Apparel</li>
       </ul>
 
-      {/* Right Section - Search, Login, Account */}
+      {/* Right Section - Search, Login, and Account */}
       <div className="flex items-center space-x-4">
         <input 
           type="text" 
